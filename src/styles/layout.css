@@ -1,0 +1,138 @@
+/* .section {
+  background: #ffffff;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.subsection {
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+} */
+
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Page */
+body {
+  background: #f6f7f9;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+/* Forms */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+
+/* Card layout */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;              
+  padding: 12px 14px;      
+  border-radius: 10px;      
+  border: 1px solid #ddd;   
+  font-size: 15px;         
+  outline: none;           
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #7b61ff;            
+  box-shadow: 0 0 0 3px rgba(123,97,255,0.15);
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  /* background: #7b61ff;  */
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #684ee0; 
+}
+
+button:active {
+  transform: scale(0.98); 
+}
+
+/* Secondary / back buttons */
+button.secondary {
+  background: #f2f2f2;
+  color: #333;
+}
+
+button.secondary:hover {
+  background: #e5e5e5;
+}
