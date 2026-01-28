@@ -24,23 +24,21 @@ const Landing = ({ onLogin, onSignup }) => {
             </div>
 
             <div className="hero-image">
-            <img src="/therapy-illustration.png" alt="Therapy illustration" />
+            <img src="/images/tpy2.jpg" alt="Therapy illustration" />
             </div>
         </div>
 
         {/* curved divider */}
-        <svg className="curve" viewBox="0 0 1440 100" preserveAspectRatio="none">
-            <path
-            d="M0,50 C240,90 480,10 720,30 960,50 1200,90 1440,50 L1440,120 L0,120 Z"
-
-            // d="M0,25 C360,10 480,70 720,60 960,50 1200,100 1440,85 L1440,120 L0,120 Z"
-            fill="#f9fafb"
-            />
+        <svg className="curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="M0,50 C240,90 480,20 700,30 960,50 1200,90 1440,50 L1440,120 L0,120 Z"
+            fill="#e7e7e7"
+          />
         </svg>
       </section>
 
       <section className="info">
-        <h2>How it works</h2>
+        <h2>Our Therapy Services</h2>
         <div className="steps">
           <div>
             <h3>1. Sign up</h3>
@@ -57,6 +55,23 @@ const Landing = ({ onLogin, onSignup }) => {
         </div>
       </section>
 
+      <section className="process">
+        {/* <h2>Our Therapy Process</h2> */}
+        <div className="process-list">
+          <div className="process-item">
+            <span className="process-number">1</span>
+            <p>Create your account and fill your profile.</p>
+          </div>
+          <div className="process-item">
+            <span className="process-number">2</span>
+            <p>Book a session with a therapist that fits you.</p>
+          </div>
+          <div className="process-item">
+            <span className="process-number">3</span>
+            <p>Attend your session and track your progress.</p>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );

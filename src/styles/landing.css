@@ -11,7 +11,7 @@
 
 .logo {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Roustel';
   color: white;
   letter-spacing: 1px;
@@ -27,12 +27,13 @@
   background-color: #658280;
   /* background-color: #b78f47;  */
   position: relative;
-  padding-top: 120px;
+  padding-top: 10px;
   min-height: 90vh;
   /* color: white; */
   color: #f6f5f3;
   /* font-family: 'Goldenbook', serif; */
   font-weight: 400;
+  overflow: visible;
 }
 
 .hero-inner {
@@ -50,7 +51,7 @@
 }
 .hero-content h1{
   font-family: 'Goldenbook';
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -61,21 +62,49 @@
 }
 
 .hero-image img {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  /* max-width: 50rem; */
+  /* height: auto; */
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
 }
 
-/* curve at the bottom */
-.curve {
+/* .curve {
   display: block;
   width: 100%;
   height: 160px;
+} */
+.curve {
+  /* display: block; */
+  /* background-color: #d6de95; */
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 160px;
 }
+/* .curve {
+  position: absolute;
+  bottom: -120px; 
+  left: 0;
+  width: 100vw;
+  height: 160px;
+  display: block;
+} */
 
 /* INFO */
 .info {
-  background: #f9fafb;
-  padding: 120px 60px;
+  background: #e7e7e7;
+  padding-top: 1rem;
+}
+
+.info h2{
+  font-family: 'Goldenbook';
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #131212;
 }
 
 .steps {
@@ -84,6 +113,58 @@
   gap: 2rem;
   margin-top: 2rem;
 }
+
+.process {
+  text-align: center;
+  font-family: "Goldenbook";
+  padding: 20px 20px;
+  /* color: #f6f5f3; */
+  background: #ceb8b8; /* section color */
+}
+
+.process h2 {
+  font-size: 2rem;
+  font-family: "Goldenbook";
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  margin-bottom: 3rem;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2.5rem; */
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+.process-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* numbers on the left */
+  gap: 1.5rem;
+}
+
+.process-number {
+  font-family: "Goldenbook";
+  font-size: 4rem;  
+  color: #f6f5f3;    
+  font-weight: bold;
+  /* color: #242323;  */
+  flex-shrink: 0;
+  /* text-shadow: 2px 2px 0 #242323, 2px 2px 0 #888, 4px 4px 0 #666, 8px 8px 0 #444; */
+}
+
+.process-item p {
+  /* font-weight: bold; */
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+  font-family: "Goldenbook";
+  text-transform: uppercase;
+}
+
 
 /* FOOTER */
 .footer {
