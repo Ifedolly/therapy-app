@@ -4,16 +4,18 @@
   justify-content: space-between;
   padding: .5rem 2rem;
   align-items: center;
-  background-color: #464622;
-  background-color: #658280;
+  /* background-color: #464622;
+  + */
+  /* background-color: #658280; */
+  color: #4b4314;
   /* background-color: #b78f47; */
 }
 
 .logo {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.2rem;
   font-family: 'Roustel';
-  color: white;
+  color: #4b4314;
   letter-spacing: 1px;
 }
 
@@ -24,15 +26,17 @@
 /* HERO */
 .hero {
   background: #4d4d24;
-  background-color: #658280;
-  /* background-color: #b78f47;  */
+  background-color: #475c5a;
+  /* background-color: #464622; */
+  /* background-color: #2b3147; */
+  /* background-color: #1e2b31;  */
   position: relative;
   padding-top: 10px;
   min-height: 90vh;
   /* color: white; */
   color: #f6f5f3;
   /* font-family: 'Goldenbook', serif; */
-  font-weight: 400;
+  /* font-weight: 600; */
   overflow: visible;
 }
 
@@ -41,7 +45,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 
 .hero-content {
@@ -50,11 +54,20 @@
   /* font-size: 5; */
 }
 .hero-content h1{
-  font-family: 'Goldenbook';
-  font-size: 2.5rem;
+  /* font-family: 'Goldenbook'; */
+  font-size: 2.2rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+}
+
+.hero-content p{
+  /* font-family: 'Goldenbook'; */
+  font-weight: 400;
+  font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .hero-image {
   flex: 1;
   display: flex;
@@ -65,36 +78,26 @@
   /* max-width: 100%; */
   /* max-width: 50rem; */
   /* height: auto; */
-  height: 35rem;
-  width: 35rem;
+  height: 25rem;
+  width: 25rem;
   border-radius: 50%;
 }
 
-/* .curve {
-  display: block;
-  width: 100%;
-  height: 160px;
-} */
+.hero-actions{
+  margin-top: 2rem;
+
+}
+
 .curve {
-  /* display: block; */
-  /* background-color: #d6de95; */
   position: absolute;
   bottom: -20px;
   width: 100%;
   height: 160px;
 }
-/* .curve {
-  position: absolute;
-  bottom: -120px; 
-  left: 0;
-  width: 100vw;
-  height: 160px;
-  display: block;
-} */
 
-/* INFO */
 .info {
-  background: #e7e7e7;
+  background: #dfeeff;
+  background-color: #e9e4d1;
   padding-top: 1rem;
 }
 

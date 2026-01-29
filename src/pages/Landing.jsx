@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "../styles/landing.css";
+// import "../styles/landing.css";
 
 const Landing = ({ onLogin, onSignup }) => {
   return (
@@ -10,9 +10,9 @@ const Landing = ({ onLogin, onSignup }) => {
       <section className="hero">
         <div className="hero-inner">
             <div className="hero-content">
-              <h1>Care that meets you where you are</h1>
+              <h1>Care for you, for all.</h1>
               <p>
-                  Book therapy sessions easily. Safe, private, and built for real
+                  Book therapy sessions. Safe, private, for real
                   people.
               </p>
               <div className="hero-actions">
@@ -31,8 +31,8 @@ const Landing = ({ onLogin, onSignup }) => {
         {/* curved divider */}
         <svg className="curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
           <path
-            d="M0,50 C240,90 480,20 700,30 960,50 1200,90 1440,50 L1440,120 L0,120 Z"
-            fill="#e7e7e7"
+            d="M0,50 C240,90 480,10 720,30 960,50 1200,90 1440,50 L1440,120 L0,120 Z"
+            fill="#e9e4d1"
           />
         </svg>
       </section>
