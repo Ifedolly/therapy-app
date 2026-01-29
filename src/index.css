@@ -13,9 +13,12 @@
 @font-face {
   font-family: 'Goldenbook';
   src: url('./assets/fonts/Goldenbook.otf') format('opentype');
-  font-weight: 400;
   font-style: normal;
+}
 
+@font-face {
+  font-family: 'Verlag';
+  src: url('./assets/fonts/Verlag-Book.otf');
 }
 
 *{

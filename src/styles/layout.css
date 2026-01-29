@@ -22,7 +22,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Goudi';
+  /* font-family: 'Goudi'; */
   /* font-family: system-ui, -apple-system, sans-serif; */
 }
 
@@ -108,8 +108,10 @@ input:focus {
 /* Buttons */
 button {
   padding: 8px 10px;
-  border-radius: 20px;
-  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: #1b496b;
+  color: #e5e7eb;
+  /* border: 1px solid #e5e7eb; */
   /* background: #7b61ff;  */
   /* color: white; */
   font-size: 10px;
@@ -121,7 +123,7 @@ button {
 }
 
 button:hover {
-  background: #dfb11c; 
+  background: #243c57; 
 }
 
 button:active {

@@ -24,7 +24,7 @@ const Landing = ({ onLogin, onSignup }) => {
             </div>
 
             <div className="hero-image">
-            <img src="/images/tpy2.jpg" alt="Therapy illustration" />
+            <img src="/images/tpy3.jpg" alt="Therapy illustration" />
             </div>
         </div>
 
@@ -37,41 +37,40 @@ const Landing = ({ onLogin, onSignup }) => {
         </svg>
       </section>
 
-      <section className="info">
-        <h2>Our Therapy Services</h2>
-        <div className="steps">
-          <div>
-            <h3>1. Sign up</h3>
-            <p>Create an account in minutes.</p>
-          </div>
-          <div>
-            <h3>2. Book a session</h3>
-            <p>Choose a time that works for you.</p>
-          </div>
-          <div>
-            <h3>3. Get care</h3>
-            <p>Meet your therapist with ease.</p>
-          </div>
+      <section className="mission">
+        {/* <h2>Your Path to health starts here</h2> */}
+        <p>
+          Our mission is to provide compassionate, evidence-based support that
+          empowers individuals to overcome anxiety, rediscover peace, 
+          and live with confidence. We are committted to creating a safe, 
+          welcoming space where healing and personal growth thrive.
+        </p>
+      </section>
+
+      <section className="services">
+        <div className="service text">
+          <h3><i>Evidence-based</i> <br /> Effective Therapy</h3>
+          <p>
+            Our approach combines proven, science-backed techniques 
+            like Cognitive behavioural Therapy (CBT) and mindfulness 
+            strategies to help you manage anxiety effectively.
+          </p>
+        </div>
+
+        <div className="service image">
+          <img src="/images/tpy3.jpg" alt="Therapy session" />
+        </div>
+
+        <div className="service image">
+          <img src="/images/tpy7.jpg" alt="Mental wellness" />
+        </div>
+
+        <div className="service text">
+          <h3>Safe & Private</h3>
+          <p>Your conversations are secure and confidential.</p>
         </div>
       </section>
 
-      <section className="process">
-        {/* <h2>Our Therapy Process</h2> */}
-        <div className="process-list">
-          <div className="process-item">
-            <span className="process-number">1</span>
-            <p>Create your account and fill your profile.</p>
-          </div>
-          <div className="process-item">
-            <span className="process-number">2</span>
-            <p>Book a session with a therapist that fits you.</p>
-          </div>
-          <div className="process-item">
-            <span className="process-number">3</span>
-            <p>Attend your session and track your progress.</p>
-          </div>
-        </div>
-      </section>
       <Footer />
     </>
   );
