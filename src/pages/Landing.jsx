@@ -24,7 +24,7 @@ const Landing = ({ onLogin, onSignup }) => {
             </div>
 
             <div className="hero-image">
-            <img src="/images/tpy3.jpg" alt="Therapy illustration" />
+            <img src="/images/tpy2.jpg" alt="Therapy illustration" />
             </div>
         </div>
 
@@ -66,8 +66,12 @@ const Landing = ({ onLogin, onSignup }) => {
         </div>
 
         <div className="service text">
-          <h3>Safe & Private</h3>
-          <p>Your conversations are secure and confidential.</p>
+          <h3>Our Therapy Services</h3>
+          <p>Get the emotional healing you need to start living your best life.</p>
+          <ul>
+            <li>Individual Therapy</li>
+            <li>Adolescent Therapy</li>
+          </ul>
         </div>
       </section>
 

@@ -32,7 +32,8 @@
   /* background-color: #121e2e; */
   position: relative;
   padding-top: 10px;
-  min-height: 90vh;
+  /* padding: 20px 50px; */
+  min-height: 80vh;
   color: white;
   color: #1b496b;
   /* color: #b8cedc; */
@@ -79,8 +80,8 @@
   /* max-width: 100%; */
   /* max-width: 50rem; */
   /* height: auto; */
-  height: 25rem;
-  width: 25rem;
+  height: 24rem;
+  width: 24rem;
   border-radius: 50%;
 }
 
@@ -103,14 +104,6 @@
   color: #1b496b;
 }
 
-.mission h2{
-  font-family: 'Verlag';
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
 .mission p {
   font-family: 'Goldenbook';
   padding: 10px 10rem 50px;
@@ -131,6 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* height: 100vh; */
   /* padding: 60px; */
 }
 
@@ -138,32 +132,50 @@
   flex-direction: column;
   /* text-align: center; */
   background: #1b496b;
+  height: 70vh;
 }
 
 .services > .service:nth-child(1) {
-  /* font-family: 'Goldenbook'; */
+  /* font-family: 'Verlag'; */
   color: #e5e7eb;
-  padding: 7rem;
+  padding: 6rem;
   font-size: 20px;
+  /* font-weight: 400; */
+  /* letter-spacing: 1px; */
 }
 
 .services > .service:nth-child(1) h3{
+  font-family: 'Goldenbook';
   font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .services > .service:nth-child(4) {
-  background-color: #e9e4d1; 
+  background-color: #e9e4d1;
+  /* font-family: 'Goldenbook'; */
+  color: #1b496b; 
+  padding: 6rem;
+  font-size: 22px; 
+}
+
+.services > .service:nth-child(4) h3 {
+  font-family: 'Goldenbook';
+  font-size: 35px;
+  font-weight: 600;
 }
 
 .service.image img {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   object-fit: cover;
 }
 
 
 /* FOOTER */
 .footer {
+  background: #1b496b;
+  background-color: #b8cedc;
   padding: 2rem;
   text-align: center;
   font-size: 0.9rem;
