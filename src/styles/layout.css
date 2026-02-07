@@ -27,10 +27,6 @@
 }
 
 /* Page */
-body {
-  /* background: #f6f7f9; */
-  /* color: #222; */
-}
 
 .container {
   max-width: 1200px;
@@ -39,9 +35,6 @@ body {
 }
 
 /* Headings */
-h1 {
-  /* margin-bottom: 24px; */
-}
 
 h2 {
   margin-bottom: 16px;

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 // import "../styles/landing.css";
 
-const Landing = ({ onLogin, onSelectSignupRole }) => {
+const Landing = ({ onLogin, onGetStarted }) => {
 
   return (
     <>
@@ -17,7 +17,7 @@ const Landing = ({ onLogin, onSelectSignupRole }) => {
               Book therapy sessions. Safe, private, for real
               people.
             </p>
-            <button onClick={() => onSelectSignupRole("role-select")}>
+            <button onClick={onGetStarted}>
               Get Started
             </button>
           </div> 

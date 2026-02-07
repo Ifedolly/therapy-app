@@ -90,11 +90,9 @@
 
 // export default App;
 
-
+import { useState } from "react";
 import { auth } from "./firebase";
 import { signOut } from "firebase/auth";
-
-import { useState } from "react";
 
 import Landing from "./pages/Landing";
 import RoleSelect from "./pages/RoleSelect";
@@ -110,20 +108,24 @@ const App = () => {
   const [mode, setMode] = useState(null);
   const [prevMode, setPrevMode] = useState(null) 
 
-  
+  const goTo = (nextMode) => {
+    setPrevMode(mode);
+    setMode(nextMode);
+  }
 
   const handleLogout = async () => {
     await signOut(auth);
     setUser(null);
     setMode(null);
+    setPrevMode(null)
   };
 
   // Landing page entry
   if (!user && !mode) {
     return (
       <Landing
-        onLogin={() => setMode("login")}
-        onSelectSignupRole={(role) => setMode(role)}
+        onLogin={() => goTo("login")}
+        onGetStarted={() => goTo("role-select")}
       />
     );
   }
@@ -159,26 +161,43 @@ const App = () => {
       <h1>Therapy Booking App</h1>
 
       {mode && (
-        <button className="secondary" onClick={() => setMode(null)}>
+        <button className="secondary" onClick={() => 
+          {
+            setMode(prevMode)
+            setPrevMode(null)
+          }}>
           ← Back
         </button>
       )}
 
-      {mode === "role-select" && (
-      <RoleSelect onSelect={(role) => setMode(role)} />
+
+      {mode === "login" && (
+        <Login
+          onLogin={setUser}
+          onCreateAccount={() => goTo("role-select")}
+        />
       )}
 
-      {mode === "signup-patient" && <PatientSignUp />}
-      {mode === "signup-therapist" && <TherapistSignUp />}
-      {mode === "login" && (
+      {mode === "role-select" && (
+      <RoleSelect onSelect={(role) => goTo(role)} />
+      )}
+
+      {mode === "signup-patient" && (
+        <PatientSignUp onSignup={setUser} />
+      )}
+      {mode === "signup-therapist" && (
+        <TherapistSignUp onSignup={setUser} />
+      )}
+
+      {/* {mode === "login" && (
         <Login
           onLogin={setUser}
           onCreateAccount={() => setMode("role-select")}
         />
-      )}
-          </div>
-        );
-      };
+      )} */}
+    </div>
+   );
+  };
 
 export default App;
 
