@@ -158,7 +158,6 @@ const App = () => {
   // Signup / Login pages
   return (
     <div className="container">
-      <h1>Therapy Booking App</h1>
 
       {mode && (
         <button className="secondary" onClick={() => 

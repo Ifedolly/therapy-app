@@ -116,7 +116,6 @@ const TherapistDashboard = () => {
 
   return (
     <div className="therapist-dashboard">
-      <h2>Therapist Dashboard</h2>
 
       {/* Create Slot */}
       <section className="card">
