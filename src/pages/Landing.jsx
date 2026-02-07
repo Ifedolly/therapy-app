@@ -1,31 +1,29 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 // import "../styles/landing.css";
 
-const Landing = ({ onLogin, onSignup }) => {
+const Landing = ({ onLogin, onSelectSignupRole }) => {
+
   return (
     <>
-      <Navbar onLogin={onLogin} onSignup={onSignup} />
+      <Navbar onLogin={onLogin} />
 
       <section className="hero">
         <div className="hero-inner">
-            <div className="hero-content">
-              <h1>Care for you, for all.</h1>
-              <p>
-                  Book therapy sessions. Safe, private, for real
-                  people.
-              </p>
-              <div className="hero-actions">
-                  <button onClick={onSignup}>Get Started</button>
-                  <button className="secondary" onClick={onLogin}>
-                  Login
-                  </button>
-                </div>
-            </div>
-
-            <div className="hero-image">
+          <div className="hero-content">
+            <h1>Care for you, for all.</h1>
+            <p>
+              Book therapy sessions. Safe, private, for real
+              people.
+            </p>
+            <button onClick={() => onSelectSignupRole("role-select")}>
+              Get Started
+            </button>
+          </div> 
+          <div className="hero-image">
             <img src="/images/tpy2.jpg" alt="Therapy illustration" />
-            </div>
+          </div>
         </div>
 
         {/* curved divider */}
