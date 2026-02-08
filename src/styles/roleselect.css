@@ -1,7 +1,47 @@
-.container{
-
+.role-container {
+  /* min-height: 100vh; */
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f7f9fc;
+  padding: 2rem;
+  /* gap: 3rem; */
+}
+.secondary{
+    text-align: center;
 }
 
-.container h2{
-    /* font-size: 1.4rem; */
+.role-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-container p {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+.role-buttons{
+    display: flex;
+    gap: 3rem;
+}
+
+.role-button {
+  padding: 14px 20px;
+  margin: 10px 0;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: #1b496b;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.role-button:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
 }
