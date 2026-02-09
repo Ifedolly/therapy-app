@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #f7f9fc;
+  /* background: #f7f9fc; */
   padding: 2rem;
   /* gap: 3rem; */
 }
@@ -23,14 +23,10 @@
   margin-bottom: 2rem;
   font-size: 1rem;
 }
-.role-buttons{
-    display: flex;
-    gap: 3rem;
-}
 
 .role-button {
   padding: 14px 20px;
-  margin: 10px 0;
+  margin: 10px 15px;
   border-radius: 999px;
   border: none;
   font-size: 1rem;
@@ -42,6 +38,6 @@
 }
 
 .role-button:hover {
-  background: #4f46e5;
+  background: rgb(8, 8, 61);
   transform: translateY(-2px);
 }
