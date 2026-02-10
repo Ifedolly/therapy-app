@@ -1,6 +1,11 @@
+body{
+  background-color: #b8cedc;
+  font-family: 'Verlag';
+}
+
 .role-container {
   /* min-height: 100vh; */
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -10,34 +15,64 @@
   /* gap: 3rem; */
 }
 .secondary{
-    text-align: center;
+  text-align: center;
 }
 
 .role-container h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  color: #1b496b;
 }
 
 .role-container p {
-  color: #6b7280;
+  color: #383a3d;
   margin-bottom: 2rem;
   font-size: 1rem;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+}
+
+.role-buttons {
+  display: flex;
+  gap: 1.5rem;
+  /* margin-top: 2rem; */
 }
 
 .role-button {
-  padding: 14px 20px;
-  margin: 10px 15px;
+  width: 280px;
+  padding: 14px 22px;
+  /* margin: 10px 0; */
   border-radius: 999px;
   border: none;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   background: #1b496b;
-  color: white;
+  color: #d8d9dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
   transition: 0.2s ease;
+  flex-direction: column;
 }
 
 .role-button:hover {
+  background: #0a2441;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* .role-button:hover {
   background: rgb(8, 8, 61);
   transform: translateY(-2px);
+} */
+
+.role-icon {
+  /* margin-right: 10px; */
+  font-size: 1.2rem;
+  text-align: center;
 }

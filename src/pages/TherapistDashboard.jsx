@@ -116,55 +116,58 @@ const TherapistDashboard = () => {
 
   return (
     <div className="therapist-dashboard">
+      <h2 className="dashboard-title">Welcome Back</h2>
+      
+      <div className="dashboard-grid">
+        {/* Create Slot */}
+        <section className="card">
+          <h3>Create Slot</h3>
+          <form onSubmit={handleCreateSlot}>
+            <input
+              type="datetime-local"
+              value={dateTime}
+              onChange={e => setDateTime(e.target.value)}
+            />
+            <button type="submit">Create Slot</button>
+          </form>
+        </section>
 
-      {/* Create Slot */}
-      <section className="card">
-        <h3>Create Slot</h3>
-        <form onSubmit={handleCreateSlot}>
-          <input
-            type="datetime-local"
-            value={dateTime}
-            onChange={e => setDateTime(e.target.value)}
-          />
-          <button type="submit">Create Slot</button>
-        </form>
-      </section>
+        {/* Available Slots */}
+        <section className="card">
+          <h3>Available Slots</h3>
+          {availableSlots.length === 0 && <p>No available slots</p>}
+          {availableSlots.map(slot => {
+            const slotDate = slot.dateTime?.toDate
+              ? slot.dateTime.toDate()
+              : new Date(slot.dateTime);
+            return <p key={slot.id}>{slotDate.toLocaleString()}</p>;
+          })}
+        </section>
 
-      {/* Available Slots */}
-      <section className="card">
-        <h3>Available Slots</h3>
-        {availableSlots.length === 0 && <p>No available slots</p>}
-        {availableSlots.map(slot => {
-          const slotDate = slot.dateTime?.toDate
-            ? slot.dateTime.toDate()
-            : new Date(slot.dateTime);
-          return <p key={slot.id}>{slotDate.toLocaleString()}</p>;
-        })}
-      </section>
+        {/* Booked Sessions */}
+        <section className="card">
+          <h3>Booked Sessions</h3>
+          {bookedSlots.length === 0 && <p>No upcoming bookings</p>}
+          {bookedSlots.map(slot => {
+            const slotDate = slot.dateTime?.toDate
+              ? slot.dateTime.toDate()
+              : new Date(slot.dateTime);
+            return <p key={slot.id}>{slotDate.toLocaleString()}</p>;
+          })}
+        </section>
 
-      {/* Booked Sessions */}
-      <section className="card">
-        <h3>Booked Sessions</h3>
-        {bookedSlots.length === 0 && <p>No upcoming bookings</p>}
-        {bookedSlots.map(slot => {
-          const slotDate = slot.dateTime?.toDate
-            ? slot.dateTime.toDate()
-            : new Date(slot.dateTime);
-          return <p key={slot.id}>{slotDate.toLocaleString()}</p>;
-        })}
-      </section>
-
-      {/* Completed Sessions */}
-      <section className="card">
-        <h3>Completed Sessions</h3>
-        {completedSlots.length === 0 && <p>No past sessions</p>}
-        {completedSlots.map(slot => {
-          const slotDate = slot.dateTime?.toDate
-            ? slot.dateTime.toDate()
-            : new Date(slot.dateTime);
-          return <p key={slot.id}>{slotDate.toLocaleString()}</p>;
-        })}
-      </section>
+        {/* Completed Sessions */}
+        <section className="card">
+          <h3>Completed Sessions</h3>
+          {completedSlots.length === 0 && <p>No past sessions</p>}
+          {completedSlots.map(slot => {
+            const slotDate = slot.dateTime?.toDate
+              ? slot.dateTime.toDate()
+              : new Date(slot.dateTime);
+            return <p key={slot.id}>{slotDate.toLocaleString()}</p>;
+          })}
+        </section>
+      </div>
     </div>
   );
 

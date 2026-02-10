@@ -2,20 +2,73 @@
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
+  min-height: 100vh;
 }
 
-.therapist-dashboard h2 {
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 24px;
 }
 
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
 .card {
-  background: #fff;
+  background: white;
   border-radius: 12px;
   padding: 18px 20px;
   margin-bottom: 20px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
 }
+.card:hover {
+  transform: translateY(-2px);
+}
 
 .card h3 {
   margin-bottom: 12px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
+
+.card p {
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.card input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+}
+
+.card input:focus {
+  border-color: #1b496b;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+.card button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1b496b;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  background: #0a2441;
+}
+
+.card:nth-child(2) p { background: #ecfdf5; color: #065f46; } 
+.card:nth-child(3) p { background: #eff6ff; color: #1e40af; }
+.card:nth-child(4) p { background: #fef2f2; color: #991b1b; } 

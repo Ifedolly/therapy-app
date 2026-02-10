@@ -32,6 +32,7 @@
   /* background-color: #121e2e; */
   position: relative;
   padding-top: 10px;
+  /* padding: 10px; */
   /* padding: 20px 50px; */
   min-height: 80vh;
   color: white;
@@ -53,6 +54,7 @@
 .hero-content {
   flex: 1;
   font-family: 'Goldenbook';
+  padding: 20px;
   /* font-size: 5; */
 }
 .hero-content h1{
@@ -88,6 +90,12 @@
 .hero-actions{
   margin-top: 2rem;
   font-family: 'Verlag';
+}
+
+.hero-content button{
+  margin-top: 2rem;
+  font-size: 10px;
+  border-radius: 999px;
 }
 
 .curve {

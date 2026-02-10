@@ -45,13 +45,6 @@ const PatientSlots = ({ patientId }) => {
 
     if (loading) return <p>Loading available slots...</p>
 
-
-    // Only show slots in the future
-    // const availableSlots = slots.filter(slot => {
-    //     const slotDate = slot.dateTime?.toDate ? slot.dateTime.toDate() : new Date(slot.dateTime)
-    //     return slotDate > now
-    // })
-
     const availableSlots = slots.filter(slot => {
         const end = slot.endTime?.toDate
             ? slot.endTime.toDate()
@@ -61,29 +54,31 @@ const PatientSlots = ({ patientId }) => {
 
 
     return (
-        <section className='card'>
-            <h2>Available Slots</h2>
+        <div className="patient-slots">
+            <section className='card'>
+                <h2>Available Slots</h2>
 
-            {availableSlots.length === 0 && (
-                <p>No available slots at the moment.</p>
-            )}
+                {availableSlots.length === 0 && (
+                    <p>No available slots at the moment.</p>
+                )}
 
-            {availableSlots.map(slot => {
-                const slotDate = slot.dateTime?.toDate ? slot.dateTime.toDate() : new Date(slot.dateTime)
-                return (
-                    <div className='card' key={slot.id}>
-                        <span>{slotDate.toLocaleString()}</span>{" "}
-                        <BookSlot
-                            slotId={slot.id}
-                            patientId={patientId}
-                            onBooked={(id) =>
-                                setSlots(prev => prev.filter(s => s.id !== id))
-                            }
-                        />
-                    </div>
-                )
-            })}
-        </section>
+                {availableSlots.map(slot => {
+                    const slotDate = slot.dateTime?.toDate ? slot.dateTime.toDate() : new Date(slot.dateTime)
+                    return (
+                        <div className='card' key={slot.id}>
+                            <span>{slotDate.toLocaleString()}</span>{" "}
+                            <BookSlot
+                                slotId={slot.id}
+                                patientId={patientId}
+                                onBooked={(id) =>
+                                    setSlots(prev => prev.filter(s => s.id !== id))
+                                }
+                            />
+                        </div>
+                    )
+                })}
+            </section>
+        </div>
     )
 }
 

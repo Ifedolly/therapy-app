@@ -43,11 +43,11 @@ const App = () => {
     return (
       <div className="container">
         <div className="topbar">
-          <h2>
+          {/* <h2>
             {user.role === "therapist"
               ? "Therapist Dashboard"
               : "Patient Dashboard"}
-          </h2>
+          </h2> */}
           <button onClick={handleLogout}>Logout</button>
         </div>
 
