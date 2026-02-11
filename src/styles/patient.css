@@ -4,21 +4,26 @@
   padding: 2rem;
 }
 
-/* Same title style as therapist dashboard */
-.dashboard-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+.slots-card{
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
 }
 
-/* Same grid system */
+.slots-card h2{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #1b496b;
+}
+
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-/* Slot cards */
 .slot-item {
   background: white;
   padding: 1.5rem;
@@ -35,7 +40,7 @@
   box-shadow: 0 18px 40px rgba(0,0,0,0.07);
 }
 
-/* Slot text */
+
 .slot-item span {
   font-size: 0.95rem;
   color: #374151;

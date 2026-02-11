@@ -134,7 +134,7 @@ const TherapistDashboard = () => {
 
         {/* Available Slots */}
         <section className="card">
-          <h3>Available Slots</h3>
+          <h3>Available Sessions</h3>
           {availableSlots.length === 0 && <p>No available slots</p>}
           {availableSlots.map(slot => {
             const slotDate = slot.dateTime?.toDate

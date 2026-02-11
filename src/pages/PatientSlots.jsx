@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { db } from "../firebase"
 import { collection, query, where, getDocs } from "firebase/firestore"
 import BookSlot from "./BookSlot"
+import '../styles/patient.css'
 
 const PatientSlots = ({ patientId }) => {
     const [slots, setSlots] = useState([])
@@ -55,11 +56,10 @@ const PatientSlots = ({ patientId }) => {
 
     return (
         <div className="patient-slots">
-            <section className='card'>
-                <h2>Available Slots</h2>
-
+            <section className='slots-card'>
+                <h2>Available Sessions</h2>
                 {availableSlots.length === 0 && (
-                    <p>No available slots at the moment.</p>
+                    <p>No available sessions at the moment.</p>
                 )}
 
                 {availableSlots.map(slot => {
