@@ -38,7 +38,7 @@ const Landing = ({ onLogin, onGetStarted }) => {
         </div>
 
         {/* curved divider */}
-        <svg className="curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <svg className="curve" viewBox="0 0 1400 120" preserveAspectRatio="none">
           <path
             d="M0,50 C240,90 480,10 720,30 960,50 1200,90 1440,50 L1440,120 L0,120 Z"
             fill="#e9e4d1"
@@ -76,7 +76,7 @@ const Landing = ({ onLogin, onGetStarted }) => {
 
         <div className="service text" data-aos="fade-left">
           <h3>Our Therapy Services</h3>
-          <p>Get the emotional healing you need to start living your best life.</p>
+          <p>Get the emotional healing and strength you need to start living your best life.</p>
           <ul>
             <li>Individual Therapy</li>
             <li>Adolescent Therapy</li>
