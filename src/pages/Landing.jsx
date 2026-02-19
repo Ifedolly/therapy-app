@@ -23,11 +23,11 @@ const Landing = ({ onLogin, onGetStarted }) => {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-content" data-aos="fade-right">
-            <h1>Care for you, for all.</h1>
-            <p>
-              Book therapy sessions. Safe, private, for real
+            {/* <h1>Find the support you need, when life feels overwhelming, and take care of your mental wellbeing.</h1> */}
+            <h2>
+              Book therapy sessions. <br /> Safe, private, for real
               people.
-            </p>
+            </h2>
             <button onClick={onGetStarted}>
               Get Started
             </button>
@@ -37,8 +37,7 @@ const Landing = ({ onLogin, onGetStarted }) => {
           </div>
         </div>
 
-        {/* curved divider */}
-        <svg className="curve" viewBox="0 0 1400 120" preserveAspectRatio="none">
+        <svg className="curve" viewBox="0 0 1400 100" preserveAspectRatio="none">
           <path
             d="M0,50 C240,90 480,10 720,30 960,50 1200,90 1440,50 L1440,120 L0,120 Z"
             fill="#e9e4d1"
@@ -47,7 +46,6 @@ const Landing = ({ onLogin, onGetStarted }) => {
       </section>
 
       <section className="mission" >
-        {/* <h2>Your Path to health starts here</h2> */}
         <p data-aos="fade-up">
           Our mission is to provide compassionate, evidence-based support that
           empowers individuals to overcome anxiety, rediscover peace, 
@@ -61,7 +59,7 @@ const Landing = ({ onLogin, onGetStarted }) => {
           <h3><i>Evidence-based</i> <br /> Effective Therapy</h3>
           <p>
             Our approach combines proven, science-backed techniques 
-            like Cognitive behavioural Therapy (CBT) and mindfulness 
+            
             strategies to help you manage anxiety effectively.
           </p>
         </div>
@@ -76,11 +74,40 @@ const Landing = ({ onLogin, onGetStarted }) => {
 
         <div className="service text" data-aos="fade-left">
           <h3>Our Therapy Services</h3>
-          <p>Get the emotional healing and strength you need to start living your best life.</p>
+          <p>Get the emotional healing you need.</p>
           <ul>
             <li>Individual Therapy</li>
             <li>Adolescent Therapy</li>
           </ul>
+        </div>
+      </section>
+
+      <section className="how-it-works">
+        <h2 data-aos="fade-up" data-aos-duration="800">
+          How Therapy Works
+        </h2>
+
+        <div className="steps">
+          <div className="step" data-aos="fade-up" data-aos-delay="100">
+            <div className="step-number">1</div>
+            <h3>Listening</h3>
+            <div className="step-line"></div>
+            <p>We listen carefully to understand your thoughts and experiences.</p>
+          </div>
+
+          <div className="step" data-aos="fade-up" data-aos-delay="250">
+            <div className="step-number">2</div>
+            <h3>Guidance</h3>
+            <div className="step-line"></div>
+            <p>We listen carefully to understand your thoughts and experiences.</p>
+          </div>
+
+          <div className="step" data-aos="fade-up" data-aos-delay="400">
+            <div className="step-number">3</div>
+            <h3>Healing</h3>
+            <div className="step-line"></div>
+            <p>We support your healing and personal growth over time.</p>
+          </div>
         </div>
       </section>
 

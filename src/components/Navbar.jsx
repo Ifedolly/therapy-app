@@ -6,7 +6,7 @@ const Navbar = ({ onLogin }) => {
       <span className="logo">Healing Harbour</span>
 
       <div>
-        <button className="link" onClick={onLogin}>Login</button>
+        <button className="link" onClick={onLogin}>Sign In</button>
       </div>
     </nav>
   );
