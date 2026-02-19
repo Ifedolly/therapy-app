@@ -36,12 +36,14 @@
 /* Track (background) */
 ::-webkit-scrollbar-track {
   background: hsl(60, 29%, 24%); 
+  background: #b8cedc;
   /* border-radius: 10px; */
 }
 
 /* Handle (thumb) */
 ::-webkit-scrollbar-thumb {
   background-color: hsl(60, 25%, 85%); 
+  background-color: #102b41;
   /* border-radius: 10px; */
   border: 2px solid transparent;
   background-clip: content-box;

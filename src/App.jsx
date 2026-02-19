@@ -108,25 +108,3 @@ const App = () => {
 
 export default App;
 
-
-
-// if (user) {
-//     return (
-//       <div className="container">
-//         <button onClick={handleLogout}>
-//           Logout
-//         </button>
-
-//         {user.role === "therapist" && (
-//           <TherapistDashboard />
-//         )}
-
-//         {user.role === "patient" && (
-//           <>
-//             <PatientSlots patientId={user.uid} />
-//             <PatientHistory patientId={user.uid} />
-//           </>
-//         )}
-//       </div>
-//     );
-//   }
